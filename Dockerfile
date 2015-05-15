@@ -19,6 +19,7 @@ RUN   apt-get clean && \
       rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN   locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 RUN   mkdir /var/docker-registry
+ADD   config.yml /usr/local/lib/python2.7/dist-packages/config/config.yml
 #RUN   cd /usr/local/lib/python2.7/dist-packages/config && \
 #      cp config_sample.yml config.yml && \
 #      sed -i.bak 's/\/tmp\//\/var\/docker-registry\//g' config.yml

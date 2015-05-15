@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t ppande/docker-registry:ubuntu .
+docker build -t ppande/registry-v1 .
