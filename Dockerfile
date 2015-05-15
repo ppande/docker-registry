@@ -1,4 +1,4 @@
-FROM  ubuntu:14.04
+FROM  debian:wheezy
 MAINTAINER  Pushkar Pande <pushkar.in@gmail.com>
 RUN   apt-get update && \
       apt-get install -y \
@@ -17,7 +17,7 @@ RUN   pip install docker-registry
  
 RUN   apt-get clean && \
       rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN   locale-gen en_US.UTF-8 && dpkg-reconfigure locales
+#RUN   locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 RUN   mkdir /var/docker-registry
 ADD   config.yml /usr/local/lib/python2.7/dist-packages/config/config.yml
 #RUN   cd /usr/local/lib/python2.7/dist-packages/config && \
