@@ -20,7 +20,7 @@ For caching using redis, you can optionally define the following environment var
   -e CACHE_REDIS_DB=0 \
   -e CACHE_LRU_REDIS_HOST=<redis_host_ip> \
   -e CACHE_LRU_REDIS_PORT=<redis_port> \
-  -e CACH_LRU_REDIS_DB=0 \
+  -e CACH_LRU_REDIS_DB=1 \
 ```
 
 <h5>Why use `--net=host` for registry-v1?</h5>
