@@ -11,7 +11,6 @@ docker run -d -p 5000:5000 --net=host --name=registry-v1 \
 ```
 This exposes port 5000 on the host and the new registry location thus becomes <hostname:port>.
 
-<h4>Optional</h4>
 <h5>Enabling redis cache</h5>
 For caching using redis, you can optionally define the following environment variables as part of the command line for starting a registry-v1 container.
 ```
