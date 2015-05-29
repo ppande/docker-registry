@@ -22,5 +22,5 @@ For caching using redis, you can optionally define the following environment var
   -e CACH_LRU_REDIS_DB=1 \
 ```
 
-<h5>Why use `--net=host` for registry-v1?</h5>
+<h5>Why use --net=host for starting the container?</h5>
 `--net=host` tells docker to not containerize networking and instead use the host networking stack. In my experience this option has worked without any problem when pushing large images/layers.
